@@ -8,7 +8,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name="pybetaface",
-    version="1.0",
+    version="1.1",
     description="Use the BetaFace API in Python",
     long_description=long_description,
     long_description_content_type="text/markdown",

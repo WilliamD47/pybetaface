@@ -1,18 +1,16 @@
-import pathlib
 from setuptools import setup
 
-# The directory containing this file
-HERE = pathlib.Path(__file__).parent
+from os import path
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
 
-# The text of the README file
-README = (HERE / "README.md").read_text()
 
-# This call to setup() does all the work
 setup(
     name="pybetaface",
     version="1.0",
     description="Use the BetaFace API in Python",
-    long_description=README,
+    long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/williamd47/pybetaface",
     author="WilliamD47",
